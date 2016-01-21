@@ -6,3 +6,4 @@ FirstName - Olayinka
 LastName - Soyinka  
 Email Address - Olayinka.Soyinka@gmail.com
 
+! [Profile picture] (https://avatars.githubusercontent.com/u/16812327?v=3)
