@@ -42,4 +42,12 @@ Five storage management responsibilities
 ##Question 7
 
 - **Real address**: This refers to the hardware address of physical memory I.e It is directly linked tto the address on RAM and when a process references this, it is going directly to the RAM.
-- *Virtual address**: A virtual address is a sort of link to a physical address, it uses a page table to map itself to a location on the physical device to work.
+- **Virtual address**: A virtual address is a sort of link to a physical address, it uses a page table to map itself to a location on the physical device to work.
+
+##Question 8
+
+**Round-Robin scheduling**:  This is a scheduling technique whereby the operating system allows all processes to run for a fixed amount of time in circles, it doesn't give priority to any process and doesn't starve any process, all processes and terminate either when the fixed time is up or it's done excuting before the time runs out.
+
+##Question 9
+
+
