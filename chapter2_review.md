@@ -55,3 +55,14 @@ The major difference of Monolithic and Micro kernel architecture is that
 
 **Micro Kernel** The core of the kernel is completely decoupled from other parts, and such parts run as services rather than running togther as one whole package.
 
+##Question 10
+
+**Multithreading**: This is the ability of a computer's CPU to excute multiple threads concurrently without interference.
+
+##Question 11
+
+- Simultaneous conccurent processes
+- Scheduling
+- Synchronization
+- Memory Management
+- Reliability
