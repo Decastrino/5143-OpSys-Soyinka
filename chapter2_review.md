@@ -49,5 +49,9 @@ Five storage management responsibilities
 **Round-Robin scheduling**:  This is a scheduling technique whereby the operating system allows all processes to run for a fixed amount of time in circles, it doesn't give priority to any process and doesn't starve any process, all processes and terminate either when the fixed time is up or it's done excuting before the time runs out.
 
 ##Question 9
+The major difference of Monolithic and Micro kernel architecture is that
 
+**Monolithic Kernel** Which as the word Monolithic (From a whole) suggests, all parts of the operating system work together in a single space (Kernel Space) rather than being decoupled.
+
+**Micro Kernel** The core of the kernel is completely decoupled from other parts, and such parts run as services rather than running togther as one whole package.
 
