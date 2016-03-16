@@ -9,7 +9,7 @@ Date: 01 March 2016
 
 ## Question 2
 
-**Swapping**: The process of copying ut least used files or contents of an address from **RAM** to a reserved location in **Secondary Storage** called **Swap** which is a virtual extension of **RAM**.
+**Swapping**: The process of copying out least used files or contents of an address from **RAM** to a reserved location in **Secondary Storage** called **Swap** which is a virtual extension of **RAM**.
 
 ## Question 3
 
