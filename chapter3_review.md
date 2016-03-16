@@ -14,6 +14,7 @@ Date: 01 March 2016
 ## Question 3
 
 **Categories of information in a process control block**
+
 -**Process Identification**: This set of information helps us know the identity of a certain process and uniquely differentiate it from other running process. E.g Process ID, Parent ID.
 
 -**Process State Information**: This set of information allows us to identify the state of a process and other values attributed with the running process in case an interupt occurs and it needs to be loaded back. E.g Program Couter, Registers.
