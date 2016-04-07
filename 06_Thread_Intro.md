@@ -18,9 +18,9 @@ Declaration of globale variable:
 ````    sharedCounter = 0 ````
     
 where thread A tries to access the global variable  
-````    global sharedCounter
-        for k in xrange(10000000):
-            if k % 100000 == 0:
-                print 'A:', k, sharedCounter
+````    global sharedCounter  
+        for k in xrange(10000000):  
+            if k % 100000 == 0:  
+                print 'A:', k, sharedCounter  
             sharedCounter += 1 ````
 
