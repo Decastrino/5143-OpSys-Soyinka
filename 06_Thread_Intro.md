@@ -54,3 +54,7 @@ the execution time increases.
 The main program prints **'Goodbye from the main program'** while the threads are still executing rather than after the threads
 complete execution which occurs if the **Join** is present. This simply shows that the **Join** is used to wait for the complete 
 execution of started threads before the calling thread in this case the main program continues execution.
+
+##Question 4
+###What happens if you try to Ctrl-C out of the program before it terminates?
+The program doesn't stop running, the threads keep executing.
