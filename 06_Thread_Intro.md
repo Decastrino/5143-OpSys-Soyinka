@@ -10,15 +10,15 @@ Mustang ID: M20230833
 
 ##Question 1
 Difference between Threads1.py and Threads2.py
-Threads1.py has threads that run independently without need to access the same memory space at any point during their execution,
-they both have copies of their local variables. On the other hand Threads2.py uses a global variable **shared counter** that
-both threads try to access together at some point during execution which therefore leads to a race condition.
+Threads1.py has threads that run independently without need to access the same memory space at any point during their execution,  
+they both have copies of their local variables. On the other hand Threads2.py uses a global variable **shared counter** that  
+both threads try to access together at some point during execution which therefore leads to a race condition.  
 
-Declaration of globale variable:
+Declaration of globale variable:  
     sharedCounter = 0
     
-where thread A tries to access the global variable
-global sharedCounter
+where thread A tries to access the global variable  
+    global sharedCounter
         for k in xrange(10000000):
             if k % 100000 == 0:
                 print 'A:', k, sharedCounter
