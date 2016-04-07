@@ -17,7 +17,7 @@ both threads try to access together at some point during execution which therefo
 Declaration of globale variable:  
 ````    sharedCounter = 0 ````
     
-where thread A tries to access the global variable  
+where **Thread A** tries to access the global variable  
 ```  
 global sharedCounter  
         for k in xrange(10000000):  
@@ -25,4 +25,11 @@ global sharedCounter
                 print 'A:', k, sharedCounter    
             sharedCounter += 1
 ```
-
+where **Thread B** tries to access the same glbal variable  
+```
+global sharedCounter
+        for k in xrange(10000000):
+            if k % 100000 == 0:
+                print 'B:', k, sharedCounter
+            sharedCounter += 1
+```
