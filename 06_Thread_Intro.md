@@ -41,8 +41,8 @@ to the variable till the process is done and unlocks the variable.
 
 ``` 
 self.lock.acquire() #line of code that locks access
-if k % 100000 == 0:
-    print 'A:', k, sharedCounter
+    if k % 100000 == 0:
+        print 'A:', k, sharedCounter
 sharedCounter += 1
 self.lock.release() #line of code that unlocks access after computation is done
 ``` 
