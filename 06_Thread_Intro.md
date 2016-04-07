@@ -46,3 +46,5 @@ if k % 100000 == 0:
 sharedCounter += 1
 self.lock.release() #line of code that unlocks access after computation is done
 ``` 
+The potential downside to this is **Time** since each thread has to wait for the global variable to be unlocked if it is locked,
+the execution time increases.
