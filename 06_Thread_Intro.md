@@ -48,3 +48,9 @@ self.lock.release() #line of code that unlocks access after computation is done
 ``` 
 The potential downside to this is **Time** since each thread has to wait for the global variable to be unlocked if it is locked,
 the execution time increases.
+
+##Question 3
+###Describe what happens after commenting out Join.
+The main program prints **'Goodbye from the main program'** while the threads are still executing rather than after the threads
+complete execution which occurs if the **Join** is present. This simply shows that the **Join** is used to wait for the complete 
+execution of started threads before the calling thread in this case the main program continues execution.
