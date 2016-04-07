@@ -35,8 +35,8 @@ sharedCounter += 1
 ```
 ##Question 2
 ###After running Thread3.py does it fix the problems that occured in Threads2.py? What's the down-side?  
-Yes, the code Threads3.py does fix the race condition in Threads2.py by using the lock method, I.E whenever one of the threads  
-gets to the area where they are to access the global variable, they thread locks this access therefore no other thread has access  
+Yes, the code Threads3.py does fix the race condition in Threads2.py by using the lock method, I.E whenever one of the threads
+gets to the area where they are to access the global variable, they thread locks this access therefore no other thread has access
 to the variable till the process is done and unlocks the variable.
 
 ``` 
