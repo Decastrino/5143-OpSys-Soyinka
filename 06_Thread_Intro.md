@@ -58,3 +58,32 @@ execution of started threads before the calling thread in this case the main pro
 ##Question 4
 ###What happens if you try to Ctrl-C out of the program before it terminates?
 The program doesn't stop running, the threads keep executing.
+
+##Question 5
+##Explain bizzare condition in Threads4.py
+In the code each thread tries to assign a value to the global variable an based on this variable, it should or should not print what
+is in the IF bracket. The problem here is at each point where the threads are requesting for access to global variable another thread
+could be working on the variable therby changing the contents and giving the other thread a **false positive** (thinking it has changed the contents meanwhile it is using the value assigned by the other thread). Also no thread waits for the other, they try to change the content of the variable, they don't wait for confirmation they both keep running.
+
+```
+for k in xrange(10000000):
+        #self.lock.acquire()
+        sharedNumber = 1
+        if sharedNumber != 1:
+            print 'A: that was weird'
+        #self.lock.release()
+```
+We see here that the lock lines are commented out, and the thread tries to change the content of the variable, but the same variable might curently be accessed by thread B and it unknowingly uses the value assigned by the other thread.
+
+```
+for k in xrange(10000000):
+        #self.lock.acquire()
+        sharedNumber = 2
+        if sharedNumber != 2:
+            print 'B: that was weird'
+        #self.lock.release()
+```
+Thread B also tries to access a region that might be in use by thread A, this doesn't cause the program to stop, it just uses the current value in shared number even if it isn't what it assigned.
+
+##Question 6
+Yes when the lock section is uncommented, each thread has exclusive right to **sharedNumber** at a specific point in time and neither thread prints **hat was weird** because they both have correct values at everyy point during the execution.
